@@ -48,14 +48,14 @@ public class databaze {
                         name = sc.next();
                         System.out.println("Prijmeni: ");
                         surname = sc.next();
-                        System.out.println("--Datum narozeni-- \nZadej den: DD ");
+                        System.out.println("--Datum narozeni-- \nZadej den např: 10 ");
                         day = tests.number(sc);
-                        System.out.println("--Datum narozeni-- \nZadej mesic: MM ");
+                        System.out.println("--Datum narozeni-- \nZadej mesic např: 2 ");
                         month = tests.number(sc);
-                        System.out.println("--Datum narozeni-- \nZadej rok: RRRR ");
+                        System.out.println("--Datum narozeni-- \nZadej rok např 2000 ");
                         year = tests.number(sc);
                         if (tests.date(day, month, year) != true) {
-                            System.out.println("Datum neni spravne");
+                            System.out.println("Spatne datum");
                             continue;
                         }
                         databaze.put(newid++, new technicanStudent(id, name, surname, day, month, year));
@@ -66,32 +66,32 @@ public class databaze {
                         name = sc.next();
                         System.out.println("Prijmeni: ");
                         surname = sc.next();
-                        System.out.println("--Datum narozeni-- \nZadej den: DD ");
+                        System.out.println("--Datum narozeni-- \nZadej den např: 10 ");
                         day = tests.number(sc);
-                        System.out.println("--Datum narozeni-- \nZadej mesic: MM ");
+                        System.out.println("--Datum narozeni-- \nZadej mesic např: 2 ");
                         month = tests.number(sc);
-                        System.out.println("--Datum narozeni-- \nZadej rok: RRRR ");
+                        System.out.println("--Datum narozeni-- \nZadej rok např 2000 ");
                         year = tests.number(sc);
                         if (tests.date(day, month, year) != true) {
-                            System.out.println("Datum neni spravne");
+                            System.out.println("Spatne datum");
                             continue;
                         }
                         databaze.put(newid++, new humanitaryStudent(id, name, surname, day, month, year));
                         break;
 
                     } else if (choise == 3) {
-                        System.out.println("--Zadej udaje o studentovy--\nJmeno: ");
+                       System.out.println("--Zadej udaje o studentovy--\nJmeno: ");
                         name = sc.next();
                         System.out.println("Prijmeni: ");
                         surname = sc.next();
-                        System.out.println("--Datum narozeni-- \nZadej den: DD ");
+                        System.out.println("--Datum narozeni-- \nZadej den např: 10 ");
                         day = tests.number(sc);
-                        System.out.println("--Datum narozeni-- \nZadej mesic: MM ");
+                        System.out.println("--Datum narozeni-- \nZadej mesic např: 2 ");
                         month = tests.number(sc);
-                        System.out.println("--Datum narozeni-- \nZadej rok: RRRR ");
+                        System.out.println("--Datum narozeni-- \nZadej rok např 2000 ");
                         year = tests.number(sc);
                         if (tests.date(day, month, year) != true) {
-                            System.out.println("Datum neni spravne");
+                            System.out.println("Spatne datum");
                             continue;
                         }
                         databaze.put(newid++, new combinadStudent(id, name, surname, day, month, year));
